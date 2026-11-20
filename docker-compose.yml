@@ -1,0 +1,12 @@
+services:
+  postgis:
+    image: postgis/postgis:15-3.3
+    container_name: geo_15min_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: city_gis
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "55432:5432"

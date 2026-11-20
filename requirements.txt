@@ -1,0 +1,8 @@
+requests
+pandas
+psycopg2-binary
+SQLAlchemy
+GeoAlchemy2
+folium
+streamlit
+streamlit-folium
